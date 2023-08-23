@@ -12,6 +12,13 @@
     align-items: center;
 }
 
+.menu-container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 ul {
     display: flex;
 }
@@ -23,13 +30,10 @@ li {
 
 a {
     text-decoration: none;
-    color: rgb(43, 43, 88);
+    color: rgb(165, 165, 165);
     text-shadow: 0 0 2px #61dafb;
 }
 
-a:visited {
-    color: initial;
-}
 
 .logo {
     transition: all .4s;
@@ -49,7 +53,7 @@ a:visited {
     bottom: -2px;
     left: 0;
     height: 2px;
-    width: 0;    
+    width: 0;
     background-color: #61dafb;
     border-radius: 50%;
     transition: all .4s;
@@ -58,4 +62,33 @@ a:visited {
 
 .menu-link:hover.menu-link::before {
     width: 100%;
+}
+
+
+/* CART WIDGET */
+
+.cart-container {
+    color: white;
+    width: 2rem;
+    height: 2rem;
+}
+
+.bi-cart3 {
+    color: white;
+    font-size: 2rem;
+    position: relative;
+}
+
+.cart-num {
+    background-color: red;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    width: 1.2rem;
+    height: 1.2rem;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 15px;
 }

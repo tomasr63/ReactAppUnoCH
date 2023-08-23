@@ -4,9 +4,9 @@ import './main.css';
 
 function App() {
   return (
-    <div>
-        <NavBar />
-    </div>
+    <>
+      <NavBar />
+    </>
   );
 };
 
