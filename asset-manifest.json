@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ReactAppUnoCH/static/css/main.2406621e.css",
+    "main.js": "/ReactAppUnoCH/static/js/main.502c7d64.js",
+    "index.html": "/ReactAppUnoCH/index.html",
+    "main.2406621e.css.map": "/ReactAppUnoCH/static/css/main.2406621e.css.map",
+    "main.502c7d64.js.map": "/ReactAppUnoCH/static/js/main.502c7d64.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2406621e.css",
+    "static/js/main.502c7d64.js"
+  ]
+}
