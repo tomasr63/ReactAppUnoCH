@@ -1,15 +1,31 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import { CartWidget } from "../CartWidget/CartWidget";
 
-export const NavBar = () => {
+const routes = [
+    {path: "/", text: "Home"} ,
+    {path: "/products", text: "Products"}
+]
+
+const categories = [
+    {path: "/category/mens", text: "Mens clothing"} ,
+    {path: "/category/jewelery", text: "Jewelery"} ,
+    {path: "/category/electronics", text: "Electronics"} ,
+    {path: "/category/womens", text: "Womens clothing"}
+]
+
+export const NavBar = ({title}) => {
     return (
         <nav className="navBar">
             <div className="menu-container">
-                <a href="#" className="logo"><h1>BOTTLE</h1></a>
+                <Link to="/" className="logo"><h1>{title}</h1></Link>
                 <ul className="menu">
-                    <li className="menu-item"><a href="#" className="menu-link">Home</a></li>
-                    <li className="menu-item"><a href="#" className="menu-link">About</a></li>
-                    <li className="menu-item"><a href="#" className="menu-link">Features</a></li>
+                    {routes.map(({path, text}) => {
+                        return <li key={path} className="menu-item"><NavLink to={path} className="menu-link">{text}</NavLink></li>
+                    })}
+                    {categories.map(({path, text}) => {
+                        return <li key={path} className="menu-item"><NavLink to={path} className="menu-link">{text}</NavLink></li>
+                    })}
                 </ul>
             </div>
             <CartWidget />
